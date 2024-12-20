@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promise</title>
+  </head>
+  <body>
+    <script>
+      // function myfunc(){
+      //     let a=2
+      //    let   b=2
+      //     let c= a+b
+      //     console.log(c);
+      // }
+      // setTimeout(myfunc,2000)
+
+      //       let num = 0;
+
+      //       function increase() {
+      //         let num1 = ++num;
+      //          console.log(num1);
+      //       }
+
+      // let startt;
+      //       let start = () => {
+      //       startt=  setInterval(increase, 2000);
+
+      //       };
+      //       let stop=()=>{
+      //         console.log('stop');
+      //         clearInterval(startt)
+      //       }
+      //       let div = document.createElement("div");
+
+      //       div.innerHTML = `
+      //       <button onclick="start()" >start</button>
+      //        <button onclick="stop()" >stop</button> `;
+      //       document.body.appendChild(div);
+
+      // let myPromise = new Promise((resolve, reject) => {
+      //   let error = true;
+      //   if (error) {
+      //     resolve({ name: "student", roll: "1234" });
+      //   } else {
+      //     reject("error  => we got some error");
+      //   }
+      // });
+      // myPromise
+      //   .then((user) => {
+      //     console.log(user);
+      //     console.log(user.name);
+      //     console.log(user.roll);
+      //     return user;
+      //   })
+      //   .then((user) => {
+      //     console.log(user.name);
+      //   })
+      //   .catch(() => {
+      //     console.log("error");
+      //   });
+
+      // myPromise.catch((error) => {
+      //   console.log(error);
+      // });
+
+      // console.log('work');
+      //       let url ="https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=religious"
+      //       async function caallingApi(){
+      //       try {
+      //         let response = await  fetch(url)
+      //         let data=  await response.json()
+      //       console.log(data);
+      //       console.log(data.category);
+      //       console.log(data.setup);
+      //       console.log(data.joke);
+      //       console.log(data.delivery);
+
+      //       } catch (error) {
+      //            console.log('we got some error');
+      //       }
+
+      //     }
+      //     caallingApi()
+
+      // let url = `https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=religious`;
+
+      // let apiCalling = () => {
+      //   fetch(url)
+      //     .then((response) => {
+      //      return response.json();
+            
+      //     })
+      //     .then((data) => console.log(data))
+      //     .catch((error) => {
+      //       console.log("we got some error");
+      //     });
+      // };
+
+      // apiCalling();
+    </script>
+  </body>
+</html>

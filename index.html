@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promises</title>
+  </head>
+  <body>
+    <button onclick="promiseeeeeeee()">promise</button>
+
+    <script>
+      const promiseeeeeeee = () => console.log("hello promises");
+
+      //   promise 1
+
+      //   let promisee = new Promise(function (resolve, reject) {
+      //     setTimeout(() => {
+      //       console.log("promise work");
+      //      resolve()
+      //     }, 1000)
+
+      //   }
+      //   );
+
+      // promisee.then(()=>{
+      //     console.log('workedd');
+      //   })
+      //promise 1
+
+      // 2
+
+      //   new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       console.log("direct method of promise");
+      //       resolve();
+      //     }, 1000);
+      //   }).then(() => {
+      //     console.log("directly method success fully run");
+      //   });
+
+      // 3
+
+      //   new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       console.log("data recived");
+      //       resolve( {
+      //         namee:"user", fname:'fUser'
+      //       });
+      //     }, 5000);
+      //   }).then((obj) => {
+
+      //     console.log(obj);
+      //     console.log(obj.namee);
+      //   });
+
+      // /4
+
+      new Promise((resolve, reject) => {
+        let error = true;
+
+        if (!error) {
+          resolve("run Succesfully");
+        } else {
+          reject(" ERROR not running successfully ");
+        }
+      })
+        .then((resVal) => {
+          console.log(resVal);
+        })
+        .catch((errVal) => {
+          console.log(errVal);
+        })
+        .finally(()=>{
+          
+            console.log('final');
+          
+          ;
+          
+        })        
+        ;
+    </script>
+  </body>
+</html>
